@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRIAN :: Аркадное Портфолио</title>
+<meta name="description" content="Портфолио разработчика Brian в стиле ретро-аркады — Инженер-программист, Full-Stack разработчик, Инженер-конструктор из Уфы, Россия.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230a0a0a'/><text x='16' y='24' text-anchor='middle' font-size='22' fill='%2300ff41'>B</text></svg>">
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- CRT Overlay -->
+<div class="crt-overlay" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- Sound Toggle -->
+<button class="sound-toggle" id="soundToggle" aria-label="Toggle sound effects" title="Toggle Sound">
+  <span class="sound-on">♫ ON</span>
+  <span class="sound-off" style="display:none;">♫ OFF</span>
+</button>
+
+<!-- Navigation -->
+<nav class="arcade-nav" id="arcadeNav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">BRIAN<span class="blink">_</span></a>
+    <div class="nav-links">
+      <a href="#stats" class="nav-link" data-level="1">LVL1: СТАТА</a>
+      <a href="#projects" class="nav-link" data-level="2">LVL2: ПРОЕКТЫ</a>
+      <a href="#skills" class="nav-link" data-level="3">LVL3: НАВЫКИ</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" class="mobile-link">СТАРТ</a>
+  <a href="#stats" class="mobile-link">LVL1: СТАТА</a>
+  <a href="#projects" class="mobile-link">LVL2: ПРОЕКТЫ</a>
+  <a href="#skills" class="mobile-link">LVL3: НАВЫКИ</a>
+</div>
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero" id="hero">
+  <div class="hero-cabinet">
+    <div class="hero-screen">
+      <div class="hero-content">
+        <div class="coin-slot">INSERT COIN</div>
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <div class="hero-subtitle" id="heroSubtitle"></div>
+        <div class="hero-meta">
+          <span class="meta-item">📍 УФА, РОССИЯ</span>
+          <span class="meta-item">🎮 11 РЕПОЗИТОРИЕВ</span>
+          <span class="meta-item">⭐ С АПРЕЛЯ 2025</span>
+        </div>
+        <a href="#stats" class="press-start" id="pressStart">
+          <span class="blink">▶ PRESS START ◀</span>
+        </a>
+      </div>
+      <!-- Pixel art decoration -->
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="pixel-ghost ghost-1"></div>
+        <div class="pixel-ghost ghost-2"></div>
+        <div class="pixel-ghost ghost-3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS SECTION ===================== -->
+<section class="section stats-section" id="stats">
+  <div class="section-header">
+    <div class="level-badge">LEVEL 1</div>
+    <h2 class="section-title">GITHUB HUD</h2>
+    <p class="section-desc">Статистика игрока и владение языками</p>
+  </div>
+
+  <div class="stats-grid">
+    <!-- Score Display -->
+    <div class="hud-panel score-panel">
+      <div class="hud-label">ТАБЛО ОЧКОВ</div>
+      <div class="score-grid">
+        <div class="score-item">
+          <span class="score-value" data-target="11">0</span>
+          <span class="score-label">РЕПО</span>
+        </div>
+        <div class="score-item">
+          <span class="score-value" data-target="15">0</span>
+          <span class="score-label">ЗВЁЗДЫ</span>
+        </div>
+        <div class="score-item">
+          <span class="score-value" data-target="53">0</span>
+          <span class="score-label">ПУШИ</span>
+        </div>
+        <div class="score-item">
+          <span class="score-value" data-target="8">0</span>
+          <span class="score-label">РЕЛИЗЫ</span>
+        </div>
+        <div class="score-item">
+          <span class="score-value" data-target="8">0</span>
+          <span class="score-label">PRs</span>
+        </div>
+        <div class="score-item">
+          <span class="score-value" data-target="4">0</span>
+          <span class="score-label">ЗАДАЧИ</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language Bars -->
+    <div class="hud-panel lang-panel">
+      <div class="hud-label">УРОВНИ СИЛЫ ЯЗЫКОВ</div>
+      <div class="lang-bars">
+        <div class="lang-bar" data-lang="Python" data-pct="45.7">
+          <span class="lang-name">PYTHON</span>
+          <div class="bar-track"><div class="bar-fill python-fill" style="--pct:45.7%"></div></div>
+          <span class="lang-pct">45.7%</span>
+        </div>
+        <div class="lang-bar" data-lang="HTML" data-pct="41.0">
+          <span class="lang-name">HTML</span>
+          <div class="bar-track"><div class="bar-fill html-fill" style="--pct:41.0%"></div></div>
+          <span class="lang-pct">41.0%</span>
+        </div>
+        <div class="lang-bar" data-lang="TypeScript" data-pct="9.6">
+          <span class="lang-name">TYPESCRIPT</span>
+          <div class="bar-track"><div class="bar-fill ts-fill" style="--pct:9.6%"></div></div>
+          <span class="lang-pct">9.6%</span>
+        </div>
+        <div class="lang-bar" data-lang="CSS" data-pct="1.9">
+          <span class="lang-name">CSS</span>
+          <div class="bar-track"><div class="bar-fill css-fill" style="--pct:1.9%"></div></div>
+          <span class="lang-pct">1.9%</span>
+        </div>
+        <div class="lang-bar" data-lang="Rust" data-pct="0.5">
+          <span class="lang-name">RUST</span>
+          <div class="bar-track"><div class="bar-fill rust-fill" style="--pct:0.5%"></div></div>
+          <span class="lang-pct">0.5%</span>
+        </div>
+        <div class="lang-bar" data-lang="PowerShell" data-pct="0.4">
+          <span class="lang-name">POWERSHELL</span>
+          <div class="bar-track"><div class="bar-fill ps-fill" style="--pct:0.4%"></div></div>
+          <span class="lang-pct">0.4%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity Meter -->
+  <div class="hud-panel activity-panel">
+    <div class="hud-label">НЕДАВНЯЯ АКТИВНОСТЬ</div>
+    <div class="activity-grid">
+      <div class="activity-item">
+        <div class="activity-icon">⬆</div>
+        <div class="activity-bar-wrap">
+          <div class="activity-bar" style="--pct:100%"></div>
+        </div>
+        <span class="activity-val">53 пуша</span>
+      </div>
+      <div class="activity-item">
+        <div class="activity-icon">🔀</div>
+        <div class="activity-bar-wrap">
+          <div class="activity-bar" style="--pct:15%"></div>
+        </div>
+        <span class="activity-val">8 PRs</span>
+      </div>
+      <div class="activity-item">
+        <div class="activity-icon">📦</div>
+        <div class="activity-bar-wrap">
+          <div class="activity-bar" style="--pct:15%"></div>
+        </div>
+        <span class="activity-val">8 релизов</span>
+      </div>
+      <div class="activity-item">
+        <div class="activity-icon">🐛</div>
+        <div class="activity-bar-wrap">
+          <div class="activity-bar" style="--pct:7.5%"></div>
+        </div>
+        <span class="activity-val">4 задачи</span>
+      </div>
+      <div class="activity-item">
+        <div class="activity-icon">👁</div>
+        <div class="activity-bar-wrap">
+          <div class="activity-bar" style="--pct:20%"></div>
+        </div>
+        <span class="activity-val">11 подписок</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS SECTION ===================== -->
+<section class="section projects-section" id="projects">
+  <div class="section-header">
+    <div class="level-badge">LEVEL 2</div>
+    <h2 class="section-title">ВЫБЕРИ СВОЮ ИГРУ</h2>
+    <p class="section-desc">8 картриджей загружено &mdash; выбирай приключение</p>
+  </div>
+
+  <!-- BOSS LEVEL: SWARM -->
+  <div class="project-card boss-card">
+    <div class="boss-badge">★ BOSS LEVEL ★</div>
+    <div class="card-inner">
+      <div class="card-header">
+        <h3 class="card-title">SWARM</h3>
+        <div class="card-stats">
+          <span class="card-lang python-tag">Python</span>
+          <span class="card-star">⭐ 8</span>
+          <span class="card-fork">🍴 1</span>
+        </div>
+      </div>
+      <p class="card-desc">Оркестрация неограниченного числа CLI-агентов (Claude, Gemini, Codex) для параллельного программирования с общим пулом задач и блокировкой файлов</p>
+      <div class="card-tags">
+        <span class="tag">AI</span>
+        <span class="tag">Agents</span>
+        <span class="tag">CLI</span>
+      </div>
+      <a href="https://github.com/BrianIS8090/SWARM" target="_blank" rel="noopener noreferrer" class="card-link">INSERT COIN →</a>
+    </div>
+  </div>
+
+  <!-- Regular Projects Grid -->
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">MarkdownRedactor</h3>
+          <div class="card-stats">
+            <span class="card-lang ts-tag">TS + Rust</span>
+            <span class="card-star">⭐ 3</span>
+          </div>
+        </div>
+        <p class="card-desc">Редактор Markdown для Windows — визуальное редактирование, диаграммы, темы оформления</p>
+        <div class="card-tags">
+          <span class="tag">Desktop</span>
+          <span class="tag">Editor</span>
+          <span class="tag">Rust</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/MarkdownRedactor" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">videnie</h3>
+          <div class="card-stats">
+            <span class="card-lang ts-tag">TypeScript</span>
+          </div>
+        </div>
+        <p class="card-desc">ИИ-генератор изображений с Glassmorphism UI — React + Google Gemini</p>
+        <div class="card-tags">
+          <span class="tag">AI</span>
+          <span class="tag">React</span>
+          <span class="tag">GenAI</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/videnie" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">Whisper</h3>
+          <div class="card-stats">
+            <span class="card-lang python-tag">Python</span>
+            <span class="card-star">⭐ 3</span>
+          </div>
+        </div>
+        <p class="card-desc">WisperFlow — набор инструментов для распознавания речи на базе OpenAI Whisper с GUI и CLI</p>
+        <div class="card-tags">
+          <span class="tag">AI</span>
+          <span class="tag">Speech</span>
+          <span class="tag">Whisper</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/Whisper" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">Parrot</h3>
+          <div class="card-stats">
+            <span class="card-lang python-tag">Python</span>
+            <span class="card-star">⭐ 1</span>
+          </div>
+        </div>
+        <p class="card-desc">Локальный голосовой ввод — горячая клавиша → речь → текст в любом приложении. Нейросети ONNX, UI в стиле Windows 11</p>
+        <div class="card-tags">
+          <span class="tag">AI</span>
+          <span class="tag">Speech</span>
+          <span class="tag">Desktop</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/Parrot" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">step-to-dxf-converter</h3>
+          <div class="card-stats">
+            <span class="card-lang python-tag">Python</span>
+          </div>
+        </div>
+        <p class="card-desc">Конвертация STEP-файлов в DXF-чертежи с 3 видами, изометрией и спецификацией деталей</p>
+        <div class="card-tags">
+          <span class="tag">CAD</span>
+          <span class="tag">3D</span>
+          <span class="tag">Engineering</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/step-to-dxf-converter" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">Edu</h3>
+          <div class="card-stats">
+            <span class="card-lang html-tag">HTML</span>
+          </div>
+        </div>
+        <p class="card-desc">Образовательная платформа</p>
+        <div class="card-tags">
+          <span class="tag">Обучение</span>
+          <span class="tag">Web</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/Edu" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-inner">
+        <div class="card-header">
+          <h3 class="card-title">IteractiveStories</h3>
+          <div class="card-stats">
+            <span class="card-lang html-tag">HTML</span>
+          </div>
+        </div>
+        <p class="card-desc">Интерактивные истории</p>
+        <div class="card-tags">
+          <span class="tag">Web</span>
+          <span class="tag">Интерактив</span>
+        </div>
+        <a href="https://github.com/BrianIS8090/IteractiveStories" target="_blank" rel="noopener noreferrer" class="card-link">PLAY →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS SECTION ===================== -->
+<section class="section skills-section" id="skills">
+  <div class="section-header">
+    <div class="level-badge">LEVEL 3</div>
+    <h2 class="section-title">ПРОКАЧКА</h2>
+    <p class="section-desc">Способности персонажа и технологический стек</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:95%"></div></div>
+      <div class="skill-level">LVL 95</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📘</div>
+      <div class="skill-name">TypeScript</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+      <div class="skill-level">LVL 80</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🦀</div>
+      <div class="skill-name">Rust</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:40%"></div></div>
+      <div class="skill-level">LVL 40</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">HTML / CSS</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+      <div class="skill-level">LVL 90</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚛</div>
+      <div class="skill-name">React</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+      <div class="skill-level">LVL 75</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🤖</div>
+      <div class="skill-name">AI / ML</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+      <div class="skill-level">LVL 85</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🖨</div>
+      <div class="skill-name">3D-печать</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+      <div class="skill-level">LVL 70</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📐</div>
+      <div class="skill-name">CAD</div>
+      <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+      <div class="skill-level">LVL 65</div>
+    </div>
+  </div>
+
+  <!-- Focus Areas -->
+  <div class="hud-panel focus-panel">
+    <div class="hud-label">ДЕРЕВО СПЕЦИАЛИЗАЦИЙ</div>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <span class="focus-icon">🧠</span>
+        <span class="focus-text">ИИ / LLM-агенты</span>
+      </div>
+      <div class="focus-item">
+        <span class="focus-icon">🖨</span>
+        <span class="focus-text">3D-печать и CAD</span>
+      </div>
+      <div class="focus-item">
+        <span class="focus-icon">🌐</span>
+        <span class="focus-text">Full-Stack разработка</span>
+      </div>
+      <div class="focus-item">
+        <span class="focus-icon">🎤</span>
+        <span class="focus-text">Распознавание речи</span>
+      </div>
+      <div class="focus-item">
+        <span class="focus-icon">🖥</span>
+        <span class="focus-text">Десктоп-утилиты</span>
+      </div>
+      <div class="focus-item">
+        <span class="focus-icon">⚙</span>
+        <span class="focus-text">Инженер-конструктор</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="arcade-footer">
+  <div class="footer-inner">
+    <div class="footer-credits">
+      <div class="footer-line">GAME OVER? НИКОГДА.</div>
+      <div class="footer-links">
+        <a href="https://github.com/BrianIS8090" target="_blank" rel="noopener noreferrer" class="footer-link">
+          GITHUB: BrianIS8090
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025-2026 BRIAN :: ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer-pplx">
+        Created with Perplexity Computer
+      </a>
+    </div>
+    <div class="footer-art" aria-hidden="true">
+      ═══════════════════════════════════════════════
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
