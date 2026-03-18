@@ -573,6 +573,8 @@ body::after {
 }
 
 .python-fill { background: var(--neon-green); box-shadow: var(--glow-green); }
+.go-fill { background: #00ADD8; box-shadow: 0 0 10px #00ADD880; }
+.shell-fill { background: var(--neon-amber); box-shadow: var(--glow-amber); }
 .html-fill { background: var(--neon-amber); box-shadow: var(--glow-amber); }
 .ts-fill { background: var(--neon-blue); box-shadow: 0 0 10px #4488ff80; }
 .css-fill { background: var(--neon-magenta); box-shadow: var(--glow-magenta); }
